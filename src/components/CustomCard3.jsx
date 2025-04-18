@@ -6,7 +6,7 @@ class CustomCard3 extends Component {
   };
 
   fetchCard = () => {
-    fetch('http://www.omdbapi.com/?apikey=78681cd1&s="vacanze di natale"')
+    fetch('https://www.omdbapi.com/?apikey=78681cd1&s="vacanze di natale"')
       .then((response) => {
         if (response.ok) {
           return response.json();

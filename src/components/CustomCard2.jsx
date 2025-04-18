@@ -6,7 +6,7 @@ class CustomCard2 extends Component {
   };
 
   fetchCard = () => {
-    fetch('http://www.omdbapi.com/?apikey=78681cd1&s="horror"')
+    fetch('https://www.omdbapi.com/?apikey=78681cd1&s="horror"')
       .then((response) => {
         if (response.ok) {
           return response.json();

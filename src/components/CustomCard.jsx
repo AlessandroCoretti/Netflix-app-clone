@@ -9,7 +9,7 @@ class CustomCard extends Component {
 
   fetchCard = () => {
     this.setState({ isLoading: true });
-    fetch('http://www.omdbapi.com/?apikey=78681cd1&s="lord of the rings"')
+    fetch('https://www.omdbapi.com/?apikey=78681cd1&s="lord of the rings"')
       .then((response) => {
         if (response.ok) {
           return response.json();
